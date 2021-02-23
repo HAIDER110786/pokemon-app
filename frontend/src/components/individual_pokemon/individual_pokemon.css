@@ -1,0 +1,97 @@
+.individual_pokemon{
+    font-family: sans-serif;
+}
+
+.individual_pokemon .mainImage{
+    padding:3%;
+    border-radius: 14px;
+    box-shadow: 0px 0px 5px 1px #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual_pokemon .mainImage .speakIcon{
+    position:absolute;
+    top:84%;
+    left:25px;
+    height:30px;
+    width:30px;
+}
+
+.individual_pokemon .detailSection{
+    display:flex;
+    align-items: center;
+}
+
+.individual_pokemon .detailSection h1{
+    margin-bottom:5px;
+}
+
+.individual_pokemon .detailSection p{
+    margin-top:5px;
+}
+
+.individual_pokemon .powerSection{
+    height:55px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.individual_pokemon .physique{
+    font-family:  Serif; 
+    height: 80px;
+    padding: 10px 0;
+    display: flex;
+    font: default;
+    border-bottom:1px solid #d3d3d3;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.individual_pokemon .physique h2 , .individual_pokemon .physique p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.individual_pokemon .evolution{
+    background-color:rgb(241, 241, 241);
+    padding:0px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.individual_pokemon .evolution__imageAndDetailsDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual_pokemon .evolution__imageAndDetails{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:75vh;
+    flex-direction: column;
+    border: 3px solid #d3d3d3; 
+    border-radius: 7px;
+}
+
+.individual_pokemon .evolution__Image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+}
+
+.individual_pokemon .evolution__Details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}

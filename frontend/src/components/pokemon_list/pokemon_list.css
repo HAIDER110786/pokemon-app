@@ -1,0 +1,231 @@
+.pokemon_list{
+    font-size: sans-serif;
+}
+
+.pokemon_list a{
+    text-decoration:none;
+    color:initial
+}
+
+.pokemon_list .tabs{
+    width:100%;
+    height:60px;
+    position:relative;
+    display: flex;
+    z-index:1;
+    margin-bottom: 2px;
+}
+
+.pokemon_list .tabs button{
+    width:50%;
+    height:100%;
+    background-color: white;
+    color:#18a86c;
+    font-size: 18px;
+    border:none;
+}
+
+.pokemon_list .tabs button:focus{
+    outline:none;
+}
+
+.pokemon_list .tabs .bottomRedLine{
+    height:99%;
+    width:50%;
+    border-bottom:3px solid red;
+    position:absolute;
+    z-index:-1;
+    left:0%;
+    transition:0.4s;
+}
+
+.pokemon_list .tabs .t1{
+    left:0%;
+}
+
+.pokemon_list .tabs .t2{
+    left:50%;
+}
+
+.pokemon_list .tabs button.active{
+    color: white;
+    background-color:#18a86c;
+}
+
+.pokemon_list .menu{
+    height:60px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    margin-bottom:14px;
+}
+
+.pokemon_list .menu .searchLabel{
+    position:absolute;
+    top:5px;
+    left:7px;    
+    font-family: sans-serif;
+    color:rgba(32, 32, 201, 0.788);
+}
+
+.pokemon_list .menu input#search{
+    width: 58%;
+    background-color: #e7e7e7;
+    border: none;
+    padding: 14px;
+    padding-bottom: 0px;
+    padding-left: 9px;
+    font-size: 20px;
+    border-bottom:2px solid rgba(32, 32, 201, 0.788);
+}
+
+.pokemon_list .menu #search:focus{
+    outline:none;
+}
+
+.pokemon_list .menu .typeDiv{
+    width:26%;
+    background-color:#e7e7e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    border-bottom: 3px solid #d3d3d3;
+}
+
+.pokemon_list .menu .typeDiv .typeLabel{
+    position:absolute;
+    color:#8d8b8b;
+    transition: 0.2s;
+}
+
+.pokemon_list .menu .typeDiv .typeLabel:active{
+    border-bottom: rgba(32, 32, 201, 0.788);
+}
+
+.pokemon_list .menu .typeDiv .sizeAndPos{
+    top:14px;
+    left:62.5%;
+    font-size:20px;
+}
+
+.pokemon_list .menu .typeDiv .sizeAndPosAntiAll{
+    top:5px;
+    left:62%;
+    font-size:14px;
+}
+
+.pokemon_list .menu .typeDiv .currentFilterType{
+    position:absolute;
+    top:5px;
+    left:60%;
+    padding-top:22px;
+    padding-left:26px;
+}
+
+.pokemon_list .menu .type{
+    position:absolute;
+    background-color:white;
+    left:60.5%;
+    top:-50px;
+    display:flex;
+    flex-direction:column;
+    z-index:1;
+    height:75vh;
+    width:26.5%;
+    box-shadow: 0px 0px 5px 1px #888;
+    overflow-y: scroll;
+}
+
+.pokemon_list .menu .type button{
+    width:100%;
+    height:40px;
+    padding:14px;
+    border:none;
+    background-color: white;
+    text-align: left;
+}
+
+.pokemon_list .menu .type button:hover{
+    background-color: #d3d3d3;
+}
+
+.pokemon_list .menu .type button:active{
+    outline:none;
+}
+
+.pokemon_list .menu .type button:focus{
+    outline:none;
+}
+
+.pokemon_list .menu .iconDiv{
+    height:100%;
+    width:12%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pokemon_list .menu .iconDiv .icon{
+    color:blue;
+    height:25px;
+    width:25px
+}
+
+.pokemon_list .gridPosts{
+    display:flex;
+    padding:0 9%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon_list .gridPosts .gridPost{
+    width:22%;
+    margin:10px;
+    border-radius: 5px; 
+    box-shadow: 0.5px 0.5px 2px 0px #888888;
+}
+
+.pokemon_list .gridPosts .gridPost .gridPost__image{
+    padding:40px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.pokemon_list .gridPosts .gridPost .gridPost__image:hover{
+    background-color: #f8f8f8;
+}
+
+.pokemon_list .gridPosts .gridPost .gridPost__imageDetails{
+    padding:50px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:12px 9px;
+    display: flex;
+    align-items: center;
+}
+
+.pokemon_list .listItems{
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.pokemon_list .listItems .listItem{
+    display: flex;
+    margin:10px;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.pokemon_list .listItems .listItem .listItem__image{
+    width: 4%;
+}
+
+.pokemon_list .listItems .listItem .listItem__imageDetails{
+    width: 94%;
+    padding:12px 9px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #eee; 
+}
